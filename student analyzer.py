@@ -53,18 +53,18 @@ def ensure_sample_data():
    if SAMPLE_CSV.exists():
        return
    sample = pd.DataFrame([
-       {"Name":"Aman Kumar","Roll_No":"23BCA001","Gender":"M","Subject":"Math","Marks":78,"Attendance":92,"Semester":1},
-       {"Name":"Aman Kumar","Roll_No":"23BCA001","Gender":"M","Subject":"Physics","Marks":72,"Attendance":92,"Semester":1},
-       {"Name":"Aman Kumar","Roll_No":"23BCA001","Gender":"M","Subject":"Chemistry","Marks":81,"Attendance":92,"Semester":1},
-       {"Name":"Nisha Sharma","Roll_No":"23BCA002","Gender":"F","Subject":"Math","Marks":88,"Attendance":95,"Semester":1},
-       {"Name":"Nisha Sharma","Roll_No":"23BCA002","Gender":"F","Subject":"Physics","Marks":91,"Attendance":95,"Semester":1},
-       {"Name":"Nisha Sharma","Roll_No":"23BCA002","Gender":"F","Subject":"Chemistry","Marks":85,"Attendance":95,"Semester":1},
-       {"Name":"Ravi Verma","Roll_No":"23BCA003","Gender":"M","Subject":"Math","Marks":54,"Attendance":68,"Semester":1},
-       {"Name":"Ravi Verma","Roll_No":"23BCA003","Gender":"M","Subject":"Physics","Marks":47,"Attendance":68,"Semester":1},
-       {"Name":"Ravi Verma","Roll_No":"23BCA003","Gender":"M","Subject":"Chemistry","Marks":50,"Attendance":68,"Semester":1},
-       {"Name":"Priya Singh","Roll_No":"23BCA004","Gender":"F","Subject":"Math","Marks":96,"Attendance":98,"Semester":1},
-       {"Name":"Priya Singh","Roll_No":"23BCA004","Gender":"F","Subject":"Physics","Marks":94,"Attendance":98,"Semester":1},
-       {"Name":"Priya Singh","Roll_No":"23BCA004","Gender":"F","Subject":"Chemistry","Marks":97,"Attendance":98,"Semester":1},
+       {"Name":"dev ","Roll_No":"23BCA001","Gender":"M","Subject":"Math","Marks":78,"Attendance":92,"Semester":1},
+       {"Name":"harsh ","Roll_No":"23BCA001","Gender":"M","Subject":"Physics","Marks":72,"Attendance":92,"Semester":1},
+       {"Name":"Aman ","Roll_No":"23BCA001","Gender":"M","Subject":"Chemistry","Marks":81,"Attendance":92,"Semester":1},
+       {"Name":"Nisha","Roll_No":"23BCA002","Gender":"F","Subject":"Math","Marks":88,"Attendance":95,"Semester":1},
+       {"Name":"Nisha ","Roll_No":"23BCA002","Gender":"F","Subject":"Physics","Marks":91,"Attendance":95,"Semester":1},
+       {"Name":"Nisha ","Roll_No":"23BCA002","Gender":"F","Subject":"Chemistry","Marks":85,"Attendance":95,"Semester":1},
+       {"Name":"Ravi V","Roll_No":"23BCA003","Gender":"M","Subject":"Math","Marks":54,"Attendance":68,"Semester":1},
+       {"Name":"Ravim","Roll_No":"23BCA003","Gender":"M","Subject":"Physics","Marks":47,"Attendance":68,"Semester":1},
+       {"Name":"Ravi ","Roll_No":"23BCA003","Gender":"M","Subject":"Chemistry","Marks":50,"Attendance":68,"Semester":1},
+       {"Name":"Priya ","Roll_No":"23BCA004","Gender":"F","Subject":"Math","Marks":96,"Attendance":98,"Semester":1},
+       {"Name":"Priya ","Roll_No":"23BCA004","Gender":"F","Subject":"Physics","Marks":94,"Attendance":98,"Semester":1},
+       {"Name":"Priya " ,"Roll_No":"23BCA004","Gender":"F","Subject":"Chemistry","Marks":97,"Attendance":98,"Semester":1},
    ])
    sample.to_csv(SAMPLE_CSV, index=False)
    logging.info(f"Sample dataset created at {SAMPLE_CSV}")
